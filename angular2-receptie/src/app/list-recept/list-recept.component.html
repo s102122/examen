@@ -1,0 +1,11 @@
+<div class = 'container'>
+   <h1>Alle recepten</h1>
+   <ul>
+    <li *ngFor='let recept of recepts'>
+      Naam : {{ recept.naam }}<br />
+      Calorien : {{ recept.calorien }}<br />
+      Ingredienten : {{ recept.ingredienten }}<br />
+	  Tijd: {{ recept.tijd }}<br />
+    </li>
+  </ul>  
+</div>

@@ -6,16 +6,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AddReceptComponent } from './add-recept/add-recept.component';
+import { ListReceptComponent } from './list-recept/list-recept.component';
 
 const appRoutes: Routes = [
   { path: 'add', component: AddReceptComponent },
+  { path: 'list', component: ListReceptComponent }
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddReceptComponent
+    AddReceptComponent,
+    ListReceptComponent
   ],
   imports: [
     BrowserModule, 
