@@ -8,8 +8,7 @@ import { Recept } from '../recept';
   styleUrls: ['./list-recept.component.css']
 })
 export class ListReceptComponent implements OnInit {
-	
-	recepts: Recept[];
+  recepts: Recept[];
 
   constructor() { }
 

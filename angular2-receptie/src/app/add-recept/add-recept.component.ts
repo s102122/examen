@@ -17,6 +17,8 @@ export class AddReceptComponent implements OnInit {
   }
   
   onSubmit() {
-	  localStorage.setItem(this.model.naam, JSON.stringify(this.model));
+	  if(!((localStorage.getItem(model.naam)) == 'undefined')) {
+		  localStorage.setItem(this.model.naam, JSON.stringify(this.model));
+	  }  
   }
 }
