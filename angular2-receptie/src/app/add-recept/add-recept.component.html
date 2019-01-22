@@ -1,0 +1,36 @@
+<div class='container'>
+   <h1>Add recept</h1>
+
+   <form (ngSubmit)='onSubmit()' #productForm='ngForm'>
+
+      <div class='form-group'>
+         <label for='name'>naam :</label>
+         <input type='text' class='form-control' id='naam' required
+            [(ngModel)]='model.naam' name='naam'>
+      </div>
+      <br />
+      <div class='form-group'>
+         <label for='description'>calorien :</label>
+         <input type='text' class='form-control' id='calorien' required
+            [(ngModel)]='model.calorien' name='calorien'>
+      </div>
+      <br />
+      <div class='form-group'>
+         <label for='price'>ingredienten :</label>
+         <input type='text' class='form-control' id='ingredienten' required
+            [(ngModel)]='model.ingredienten' name='ingredienten'>
+      </div>
+	  <div class='form-group'>
+         <label for='price'>tijd :</label>
+         <input type='text' class='form-control' id='tijd' required
+            [(ngModel)]='model.tijd' name='tijd'>
+      </div>
+      <br />
+      <button type='submit' class='btn btn-success' [disabled]='productForm.invalid'>Add</button>
+
+      <br/><br/>
+
+      {{ productForm.value | json }}
+
+   </form>
+</div>
